@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080d1d">
+  <title>Trung thu vui vẻ</title>
+  <link rel="preload" href="font/Mali.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <section class="scene scene-intro is-active" id="intro" aria-label="Đêm trăng Trung Thu">
+      <div class="intro-sky" aria-hidden="true"></div>
+      <div class="intro-stars" aria-hidden="true"></div>
+      <img class="intro-cloud cloud-left" src="assets/intro/10-cloud-left-desktop.webp" alt="">
+      <img class="intro-cloud cloud-right" src="assets/intro/11-cloud-right-desktop.webp" alt="">
+      <img class="intro-branch" src="assets/intro/12-branch-desktop.webp" alt="">
+      <img class="intro-lantern" src="assets/intro/06-lantern-distant.webp" alt="">
+      <img class="intro-window" src="assets/intro/05-window-frame.webp" alt="">
+      <img class="intro-moon" src="assets/intro/02-full-moon.webp" alt="Trăng rằm">
+      <img class="intro-rabbit" src="assets/intro/11-rabbit.webp" alt="Chú thỏ ngọc">
+      <div class="intro-copy">
+        <p class="eyebrow">ĐÊM RẰM THÁNG TÁM</p>
+        <h1>Một lời chúc<br><em>gửi người thương</em></h1>
+      </div>
+      <button class="hold-target" id="holdTarget" aria-label="Ấn giữ vào mặt trăng để bắt đầu">
+        <span class="hold-ring"></span>
+        <span class="hold-label">Ấn giữ vào mặt trăng</span>
+        <span class="hold-note">Giữ một chút thôi, điều ước sẽ thành</span>
+      </button>
+      <div class="intro-petals" aria-hidden="true">✿ <span>✧</span> ❀</div>
+      <div class="hold-progress" id="holdProgress" aria-hidden="true"><span></span></div>
+    </section>
+
+    <section class="scene scene-cosmos" id="cosmos" aria-label="Lời chúc dưới trời sao" aria-hidden="true">
+      <div class="cosmos-glow" aria-hidden="true"></div>
+      <canvas id="starfield" aria-hidden="true"></canvas>
+      <div class="floating-field" id="floatingField" aria-live="off"></div>
+      <div class="cosmos-title"><span>GỬI EM</span><p>Trăng sáng rồi,<br><em>điều lành cũng đến.</em></p></div>
+      <div class="cosmos-footer"><span>✦</span> DƯỚI ÁNH TRĂNG RẰM <span>✦</span></div>
+    </section>
+  </main>
+
+  <audio id="bgMusic" preload="auto" loop></audio>
+
+  <button class="sound-toggle" id="soundToggle" aria-label="Bật hoặc tắt nhạc" title="Bật / tắt nhạc">♫</button>
+  <script src="script.js" defer></script>
+</body>
+</html>
